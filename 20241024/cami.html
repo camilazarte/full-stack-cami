@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* 
+        Solicitar al usuario que ingresa su nombre y 
+        el sistema lo salurada diciendo: "Hola {nombre}, ¿Cómo estás?"
+        */
+ 
+        //Variable para almacenar el nombre
+        var nombre;
+
+        //Solicitar el nombre
+        nombre = prompt("Ingrese su Nombre");
+
+        //Saludarlo
+        //Una forma es con alert
+        alert(`Hola ${nombre}, ¿Cómo estás?`);
+
+       //Otra forma es con document.write()
+        document.write("Hola " + nombre + ", ¿Cómo estás?");
+
+    </script>
+</body>
+</html>
