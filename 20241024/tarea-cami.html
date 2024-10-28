@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PoliDeportivo</title>
 </head>
-<body>
-    
-  <script>
-    /*
-    El club polideportivo necesita validar el ingreso de personas al salón.
-    Necesita que el sistema solicite el nombre y la edad de la persona.
-    Si la persona es menor de edad (de Argentina) el sistema notificara con el siguiente mensaje:
-    "{nombre} es menor de edad, no puede ingresar al salón."
-    De lo contrario el sistema notificará con el siguiente mensaje:
-    "{nombre} tiene {edad} años,puede ingresar sin problemas"
 
-    AYUDA: al validar la edad hacerlo con el sig segmento -> if(varEdad > "21")
-    */
-  </script>
+<body>
+
+    <script>
+        /*
+        El club polideportivo necesita validar el ingreso de personas al salón.
+        Necesita que el sistema solicite el nombre y la edad de la persona.
+        Si la persona es menor de edad (de Argentina) el sistema notificara con el siguiente mensaje:
+        "{nombre} es menor de edad, no puede ingresar al salón."
+        De lo contrario el sistema notificará con el siguiente mensaje:
+        "{nombre} tiene {edad} años,puede ingresar sin problemas"
+    
+        AYUDA: al validar la edad hacerlo con el sig segmento -> if(varEdad > "21")
+        */
+    </script>
+
+    <script>
+
+        //Variable para almacenar el nombre
+        var nombre;
+
+        //Solicitar nombre
+        nombre = prompt("Ingrese su Nombre");
+
+        //Saludarlo
+        alert(`Hola ${nombre}, ¿Cómo estás?`);
+
+        //Variable para almacenar la edad
+        var edad;
+
+        //Solicitar edad
+        edad = prompt("Ingrese su Edad");
+
+        var edad;
+        console.log(edad);
+        if (edad >= 18) {
+            alert(`${nombre} tiene ${edad} años, puede ingresar sin problemas`);
+            console.log("{nombre} tiene {edad} años,puede ingresar sin problemas");
+        } else {
+            console.log("{nombre} es menor de edad, no puede ingresar al salón.");
+            alert(`${nombre} es menor de edad, no puede ingresar al salon`);
+        }
+
+
+
+    </script>
 
 </body>
+
 </html>
